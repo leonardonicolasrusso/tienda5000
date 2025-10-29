@@ -1,7 +1,4 @@
 name,price,oferta,precio_oferta,category
-aireUniversal,5500,,,Aire Acondicionado
-TvBox1,4990,,,TV BOX / DECO
-TvBox2,4990,,,TV BOX / DECO
 401,4990,,,LCD / SMART
 403,4990,,,LCD / SMART
 405,4990,,,LCD / SMART
@@ -332,3 +329,6 @@ TvBox2,4990,,,TV BOX / DECO
 893,6000,,,Aire Acondicionado
 895,6000,,,Aire Acondicionado
 900,6000,,,Aire Acondicionado
+TvBox1,4990,,,TV BOX / DECO
+TvBox2,4990,,,TV BOX / DECO
+aireuniversal,5500,,,Aire Universal
