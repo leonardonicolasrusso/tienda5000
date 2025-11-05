@@ -668,32 +668,35 @@
     // }
     // ========= Pedido por WhatsApp =========
 
-    // ========= Pedido por WhatsApp (versión con emojis Unicode) =========
+// ========= Pedido por WhatsApp (versión sin emojis) =========
 function sendOrder(){
   if (Object.keys(cart).length === 0){ 
     alert("Tu carrito está vacío."); 
     return; 
   }
 
-  // Emojis convertidos a Unicode para máxima compatibilidad
-  // 👋 = \u{1F44B} | 🧾 = \u{1F4FE} | 🧮 = \u{1F9EE} | 💰 = \u{1F4B0}
-  let message = "\u{1F44B} Hola, este es mi pedido desde la *Tienda Russo Digital*:\n\n\u{1F4FE} *Detalle del pedido:*\n";
+  // Mensaje principal sin emojis, con formato claro y espaciado
+  let message = "Hola, este es mi pedido desde la *Tienda Russo Digital*:\n\n";
+  message += "*DETALLE DEL PEDIDO:*\n\n";
 
   for (const key in cart) {
     const item = cart[key];
     const subtotal = item.price * item.qty;
-    message += `• ${displayNameFor(item)} — ${price(item.price)} ×${item.qty} = ${price(subtotal)}\n`;
+    message += `• ${displayNameFor(item)} — ${price(item.price)} × ${item.qty} = ${price(subtotal)}\n`;
   }
 
   const total = Object.values(cart).reduce((s,i)=> s + i.qty * i.price, 0);
   const qty = Object.values(cart).reduce((s,i)=> s + i.qty, 0);
   
-  message += `\n\u{1F9EE} *Cantidad total:* ${qty} unidades\n\u{1F4B0} *Total:* ${price(total)}`;
+  message += `\n*Cantidad total:* ${qty} unidades`;
+  message += `\n*Total:* ${price(total)}`;
 
   const phone = "5493415851441"; // <-- tu número de WhatsApp
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
+
+
 
 
     // ========= Exponer funciones al scope global =========
