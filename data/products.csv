@@ -1,5 +1,5 @@
 name,price,oferta,precio_oferta,category,stock
-401,4990,,,LCD / SMART,0
+401,4990,,,LCD / SMART
 403,4990,,,LCD / SMART
 405,4990,,,LCD / SMART
 406,4990,,,LCD / SMART
@@ -10,12 +10,12 @@ name,price,oferta,precio_oferta,category,stock
 411,4990,,,LCD / SMART
 412,4990,,,LCD / SMART
 415,4990,,,LCD / SMART
-416,4990,,,LCD / SMART
-417,4990,,,LCD / SMART
+416,4990,,,LCD / SMART,0
+417,4990,,,LCD / SMART,0
 418,4990,,,LCD / SMART
-419,4990,,,LCD / SMART
-420,4990,,,LCD / SMART
-421,4990,,,LCD / SMART
+419,4990,,,LCD / SMART,0
+420,4990,,,LCD / SMART,0
+421,4990,,,LCD / SMART,0
 422,4990,,,LCD / SMART
 423,4990,,,LCD / SMART
 424,4990,,,LCD / SMART
@@ -32,7 +32,7 @@ name,price,oferta,precio_oferta,category,stock
 435,4990,,,LCD / SMART
 436,4990,,,LCD / SMART
 437,4990,,,LCD / SMART
-438,4990,,,LCD / SMART
+438,4990,,,LCD / SMART,0
 439,4990,,,LCD / SMART
 440,4990,,,LCD / SMART
 441,4990,,,LCD / SMART
@@ -53,11 +53,11 @@ name,price,oferta,precio_oferta,category,stock
 456,4990,,,LCD / SMART
 457,4990,,,LCD / SMART
 458,4990,,,LCD / SMART
-459,4990,,,LCD / SMART
+459,4990,,,LCD / SMART,0
 460,4990,,,LCD / SMART
 461,4990,,,LCD / SMART
 462,4990,,,LCD / SMART
-463,4990,,,LCD / SMART
+463,4990,,,LCD / SMART,0
 464,4990,,,LCD / SMART
 465,4990,,,LCD / SMART
 466,4990,,,LCD / SMART
@@ -84,7 +84,7 @@ name,price,oferta,precio_oferta,category,stock
 487,4990,,,LCD / SMART
 488,4990,,,LCD / SMART
 489,4990,,,LCD / SMART
-490,4990,,,LCD / SMART
+490,4990,,,LCD / SMART,0
 491,4990,,,LCD / SMART
 492,4990,,,LCD / SMART
 493,4990,,,LCD / SMART
@@ -92,25 +92,25 @@ name,price,oferta,precio_oferta,category,stock
 495,4990,,,LCD / SMART
 496,4990,,,LCD / SMART
 497,4990,,,LCD / SMART
-498,4990,,,LCD / SMART
+498,4990,,,LCD / SMART,0
 499,4990,,,LCD / SMART
 500,4990,,,LCD / SMART
-501,4990,,,LCD / SMART
-502,4990,,,LCD / SMART
-503,4990,,,LCD / SMART
+501,4990,,,LCD / SMART,0
+502,4990,,,LCD / SMART,0
+503,4990,,,LCD / SMART,0
 504,4990,,,LCD / SMART
 505,4990,,,LCD / SMART
 506,4990,,,LCD / SMART
 507,4990,,,LCD / SMART
 508,4990,,,LCD / SMART
 509,4990,,,LCD / SMART
-510,4990,,,LCD / SMART
+510,4990,,,LCD / SMART,0
 511,4990,,,LCD / SMART
 512,4990,,,LCD / SMART
 513,4990,,,LCD / SMART
-514,4990,,,LCD / SMART
+514,4990,,,LCD / SMART,0
 515,4990,,,LCD / SMART
-516,4990,,,LCD / SMART
+516,4990,,,LCD / SMART,0
 517,4990,,,LCD / SMART
 518,4990,,,LCD / SMART
 519,4990,,,LCD / SMART
@@ -145,13 +145,13 @@ name,price,oferta,precio_oferta,category,stock
 548,4990,,,LCD / SMART
 549,4990,,,LCD / SMART
 550,4990,,,LCD / SMART
-551,4990,,,LCD / SMART
+551,4990,,,LCD / SMART,0
 552,4990,,,LCD / SMART
 553,4990,,,LCD / SMART
-554,4990,,,LCD / SMART
+554,4990,,,LCD / SMART,0
 557,4990,,,LCD / SMART
 558,4990,,,LCD / SMART
-559,4990,,,LCD / SMART
+559,4990,,,LCD / SMART,0
 560,4990,,,LCD / SMART
 561,4990,,,LCD / SMART
 562,4990,,,LCD / SMART
@@ -190,7 +190,7 @@ name,price,oferta,precio_oferta,category,stock
 595,4990,,,LCD / SMART
 596,4990,,,LCD / SMART
 597,4990,,,LCD / SMART
-598,4990,,,LCD / SMART
+598,4990,,,LCD / SMART,0
 599,4990,,,LCD / SMART
 600,4990,,,LCD / SMART
 611,4990,,,LCD / SMART
@@ -201,7 +201,7 @@ name,price,oferta,precio_oferta,category,stock
 616,4990,,,LCD / SMART
 617,4990,,,LCD / SMART
 618,4990,,,LCD / SMART
-619,4990,,,LCD / SMART
+619,4990,,,LCD / SMART,0
 620,4990,,,LCD / SMART
 621,4990,,,LCD / SMART
 622,4990,,,LCD / SMART
@@ -224,13 +224,13 @@ name,price,oferta,precio_oferta,category,stock
 640,4990,,,LCD / SMART
 641,4990,,,LCD / SMART
 642,4990,,,LCD / SMART
-643,4990,,,LCD / SMART
+643,4990,,,LCD / SMART,0
 644,4990,,,LCD / SMART
 645,4990,,,LCD / SMART
 646,4990,,,LCD / SMART
 649,4990,,,LCD / SMART
 654,4990,,,LCD / SMART
-656,4990,,,LCD / SMART
+656,4990,,,LCD / SMART,0
 657,4990,,,LCD / SMART
 658,4990,,,LCD / SMART
 800,6000,,,Aire Acondicionado
@@ -246,7 +246,7 @@ name,price,oferta,precio_oferta,category,stock
 810,6000,,,Aire Acondicionado
 811,6000,,,Aire Acondicionado
 812,6000,,,Aire Acondicionado
-813,6000,,,Aire Acondicionado
+813,6000,,,Aire Acondicionado,0
 814,6000,,,Aire Acondicionado
 815,6000,,,Aire Acondicionado
 816,6000,,,Aire Acondicionado
@@ -255,7 +255,7 @@ name,price,oferta,precio_oferta,category,stock
 819,6000,,,Aire Acondicionado
 820,6000,,,Aire Acondicionado
 821,6000,,,Aire Acondicionado
-822,6000,,,Aire Acondicionado
+822,6000,,,Aire Acondicionado,0
 823,6000,,,Aire Acondicionado
 824,6000,,,Aire Acondicionado
 825,6000,,,Aire Acondicionado
@@ -283,7 +283,7 @@ name,price,oferta,precio_oferta,category,stock
 847,6000,,,Aire Acondicionado
 848,6000,,,Aire Acondicionado
 849,6000,,,Aire Acondicionado
-850,6000,,,Aire Acondicionado
+850,6000,,,Aire Acondicionado,0
 851,6000,,,Aire Acondicionado
 852,6000,,,Aire Acondicionado
 853,6000,,,Aire Acondicionado
@@ -297,11 +297,11 @@ name,price,oferta,precio_oferta,category,stock
 861,6000,,,Aire Acondicionado
 862,6000,,,Aire Acondicionado
 863,6000,,,Aire Acondicionado
-864,6000,,,Aire Acondicionado
+864,6000,,,Aire Acondicionado,0
 865,6000,,,Aire Acondicionado
 866,6000,,,Aire Acondicionado
 867,6000,,,Aire Acondicionado
-868,6000,,,Aire Acondicionado
+868,6000,,,Aire Acondicionado,0
 869,6000,,,Aire Acondicionado
 870,6000,,,Aire Acondicionado
 871,6000,,,Aire Acondicionado
@@ -312,9 +312,9 @@ name,price,oferta,precio_oferta,category,stock
 876,6000,,,Aire Acondicionado
 877,6000,,,Aire Acondicionado
 878,6000,,,Aire Acondicionado
-879,6000,,,Aire Acondicionado
+879,6000,,,Aire Acondicionado,0
 880,6000,,,Aire Acondicionado
-881,6000,,,Aire Acondicionado
+881,6000,,,Aire Acondicionado,0
 882,6000,,,Aire Acondicionado
 883,6000,,,Aire Acondicionado
 884,6000,,,Aire Acondicionado
@@ -322,9 +322,9 @@ name,price,oferta,precio_oferta,category,stock
 886,6000,,,Aire Acondicionado
 887,6000,,,Aire Acondicionado
 889,6000,,,Aire Acondicionado
-890,6000,,,Aire Acondicionado
+890,6000,,,Aire Acondicionado,0
 891,6000,,,Aire Acondicionado
-892,6000,,,Aire Acondicionado
+892,6000,,,Aire Acondicionado,0
 893,6000,,,Aire Acondicionado
 895,6000,,,Aire Acondicionado
 900,6000,,,Aire Acondicionado
