@@ -1,10 +1,10 @@
-name,price,oferta,precio_oferta,category
-401,4990,,,LCD / SMART
+name,price,oferta,precio_oferta,category,stock
+401,4990,,,LCD / SMART,0
 403,4990,,,LCD / SMART
 405,4990,,,LCD / SMART
 406,4990,,,LCD / SMART
 407,4990,,,LCD / SMART
-408,4990,,,LCD / SMART
+408,4990,,,LCD / SMART,0
 409,4990,,,LCD / SMART
 410,4990,,,LCD / SMART
 411,4990,,,LCD / SMART
@@ -193,7 +193,6 @@ name,price,oferta,precio_oferta,category
 598,4990,,,LCD / SMART
 599,4990,,,LCD / SMART
 600,4990,,,LCD / SMART
-602,4990,,,LCD / SMART
 611,4990,,,LCD / SMART
 612,4990,,,LCD / SMART
 613,4990,,,LCD / SMART
