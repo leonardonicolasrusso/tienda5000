@@ -32,13 +32,30 @@
 
     body{ background:var(--bg); padding: 20px; color: var(--ink); }
 
-    h1{
-      text-align:center; margin-bottom: 8px; letter-spacing:.2px;
-      font-weight:800; color:var(--brand-600);
+    .header{
+      text-align:center;
+      margin-bottom: 18px;
     }
+
+    .header h1{
+      margin-bottom: 4px;
+      letter-spacing:.2px;
+      font-weight:800;
+      color:var(--brand-600);
+    }
+
+    .subdata{
+      font-size: 15px;
+      color:#374151;
+      line-height:1.4;
+      margin-bottom: 8px;
+      background-color: white;
+    }
+
     .subtitle{
-      text-align:center; font-size: 15px; color: var(--muted);
-      margin: 6px auto 18px; line-height:1.5;
+      font-size: 15px;
+      color: var(--muted);
+      line-height:1.5;
     }
 
     /* Top actions */
@@ -199,11 +216,17 @@
 </head>
 <body>
 
-  <h1>CONTROLES REMOTOS</h1>
-  <p class="subtitle">
-    🛒 Elegí un modelo, con ➕ elegí la cantidad y presioná “Agregar”.<br>
-    Al terminar, 📲 enviá tu pedido por WhatsApp.
-  </p>
+  <div class="header">
+    <h1>CONTROLES REMOTOS</h1>
+    <p class="subdata">
+      <strong>RUSSO Electrónica</strong><br>
+      Santiago 3462 - Rosario, Santa Fe
+    </p>
+    <p class="subtitle">
+      🛒 Elegí un modelo, con ➕ elegí la cantidad y presioná “Agregar”.<br>
+      Al terminar, 📲 enviá tu pedido por WhatsApp.
+    </p>
+  </div>
 
   <div class="toolbar">
     <div class="toolbar-inner">
@@ -655,52 +678,32 @@
       btn.style.display = window.scrollY > 300 ? "block" : "none";
     });
 
-    // // ========= Pedido por WhatsApp =========
-    // function sendOrder(){
-    //   if (Object.keys(cart).length === 0){ alert("Tu carrito está vacío."); return; }
-    //   let message = "Hola, quiero hacer un pedido:\nPEDIDO\n";
-    //   for (const key in cart) {
-    //     const item = cart[key];
-    //     const subtotal = item.price * item.qty;
-    //     message += `- ${displayNameFor(item)} | ${price(item.price)} | x${item.qty} | ${price(subtotal)}\n`;
-    //   }
-    //   const total = Object.values(cart).reduce((s,i)=> s + i.qty * i.price, 0);
-    //   const qty = Object.values(cart).reduce((s,i)=> s + i.qty, 0);
-    //   message += `\nCantidad total: ${qty}\nTotal: ${price(total)}`;
+    // ========= Pedido por WhatsApp (versión sin emojis) =========
+    function sendOrder(){
+      if (Object.keys(cart).length === 0){ 
+        alert("Tu carrito está vacío."); 
+        return; 
+      }
 
-    //   const phone = "5493415851441"; // <-- tu número
-    //   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-    //   window.open(url, "_blank");
-    // }
-    // ========= Pedido por WhatsApp =========
+      let message = "Hola, este es mi pedido desde la *Tienda Russo Digital*:\n\n";
+      message += "*DETALLE DEL PEDIDO:*\n\n";
 
-// ========= Pedido por WhatsApp (versión sin emojis) =========
-function sendOrder(){
-  if (Object.keys(cart).length === 0){ 
-    alert("Tu carrito está vacío."); 
-    return; 
-  }
+      for (const key in cart) {
+        const item = cart[key];
+        const subtotal = item.price * item.qty;
+        message += `• ${displayNameFor(item)} — ${price(item.price)} × ${item.qty} = ${price(subtotal)}\n`;
+      }
 
-  // Mensaje principal sin emojis, con formato claro y espaciado
-  let message = "Hola, este es mi pedido desde la *Tienda Russo Digital*:\n\n";
-  message += "*DETALLE DEL PEDIDO:*\n\n";
+      const total = Object.values(cart).reduce((s,i)=> s + i.qty * i.price, 0);
+      const qty = Object.values(cart).reduce((s,i)=> s + i.qty, 0);
+      
+      message += `\n*Cantidad total:* ${qty} unidades`;
+      message += `\n*Total:* ${price(total)}`;
 
-  for (const key in cart) {
-    const item = cart[key];
-    const subtotal = item.price * item.qty;
-    message += `• ${displayNameFor(item)} — ${price(item.price)} × ${item.qty} = ${price(subtotal)}\n`;
-  }
-
-  const total = Object.values(cart).reduce((s,i)=> s + i.qty * i.price, 0);
-  const qty = Object.values(cart).reduce((s,i)=> s + i.qty, 0);
-  
-  message += `\n*Cantidad total:* ${qty} unidades`;
-  message += `\n*Total:* ${price(total)}`;
-
-  const phone = "5493415851441"; // <-- tu número de WhatsApp
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
-}
+      const phone = "5493415851441"; // <-- tu número de WhatsApp
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
 
     // ========= Exponer funciones al scope global =========
     window.abrirZoom = abrirZoom;
@@ -718,7 +721,6 @@ function sendOrder(){
     updateCart();
     setActiveCatButton();
     cargarProductos();
-    // Si querés refresco automático, podés activar:
     // setInterval(cargarProductos, 30000);
   </script>
 </body>
